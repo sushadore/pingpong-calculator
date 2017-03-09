@@ -1,7 +1,10 @@
 var numbersArray = [];
 var numberList = function(number) {
   for (currentNumber = 1; currentNumber <= number; currentNumber +=1) {
-    if (currentNumber % 3 === 0) {
+    if (currentNumber % 5 === 0) {
+      numbersArray.push("pong")
+    }
+    else if (currentNumber % 3 === 0) {
       numbersArray.push("ping");
     } else {
       numbersArray.push(currentNumber);
