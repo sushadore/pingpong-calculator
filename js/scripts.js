@@ -1,7 +1,7 @@
-var array = [];
-var numberlist = function(number) {
+var numbersArray = [];
+var numberList = function(number) {
   for (currentNumber = 1; currentNumber <= number; currentNumber +=1) {
-    array.push(currentNumber);
+    numbersArray.push(currentNumber);
   }
 
 }
@@ -13,10 +13,12 @@ $(function() {
     //$("#output").hide();
 
     var finalNumber = parseInt($("#number").val());
-    var result = numberlist(finalNumber);
-    $("ul").text(array);
+    
+    var result = numberList(finalNumber);
 
-
+    var finalList = numbersArray.map(function(number) {
+    $("ul").append("<li>" + number + "</li>");
+    });
 
   });
 });
