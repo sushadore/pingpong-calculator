@@ -23,10 +23,15 @@ $(function() {
     var result = numberList(finalNumber);
     var finalList = numbersArray.map(function(number) {
     $("ul").append("<li>" + number + "</li>");
-    });
 
     $("button#play").hide();
     $("button#play-again").show();
+    });
 
+    $("button#play-again").click(function() {
+      $("ul").empty();
+      $("button#play").show();
+      $("button#play-again").hide();
+    });
   });
 });
