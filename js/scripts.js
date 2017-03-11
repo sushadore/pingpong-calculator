@@ -16,22 +16,23 @@ var numberList = function(number) {
 }
 
 $(function() {
-  $("form").submit(function(event) {
-    event.preventDefault();
+  $("form").submit(function(e) {
+    e.preventDefault();
 
-    var finalNumber = parseInt($("#number").val());
-    var result = numberList(finalNumber);
-    var finalList = numbersArray.map(function(number) {
-    $("ul").append("<li>" + number + "</li>");
+    var inputNumber = numberList(parseInt($("#number").val()));
+    
+    var numbersList = numbersArray.map(function(number) {
+      $("ul").append("<li>" + number + "</li>");
+    });
 
     $("button#play").hide();
     $("button#play-again").show();
     });
 
     $("button#play-again").click(function() {
-      $("ul").empty();
+      numbersArray.length=0;
+      $(".output").children().remove();
       $("button#play").show();
       $("button#play-again").hide();
-    });
   });
 });
