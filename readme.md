@@ -1,13 +1,12 @@
 # Third Code Review
 
-#### Javascript exercise for Epicodus 3/11/17
-#### By Susha Dore
+#### Javascript exercise for Epicodus 3/11/17 by Susha Dore
 
 ## Ping Pong
 This is a basic game which returns an array of numbers based on user input substituting the word 'ping' for multiples of 3, the word 'pong' for multiples of 5 and the words 'ping pong' for multiples of both.
 
 ### Setup
-Follow this link
+Follow this link https://sushadore.github.io/Third-Code-Review/
 
 ### Specifications
   * It counts up to the provided number.

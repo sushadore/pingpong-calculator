@@ -13,7 +13,7 @@ var numberList = function(number) {
       numbersArray.push(currentNumber);
     }
   }
-}
+};
 
 $(function() {
   $("form").submit(function(e) {
@@ -35,6 +35,5 @@ $(function() {
       $(".output").children().remove();
       $("button#play").show();
       $("button#play-again").hide();
-      inputNumber.val=" ";
   });
 });
