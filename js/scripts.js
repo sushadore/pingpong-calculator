@@ -20,7 +20,7 @@ $(function() {
     e.preventDefault();
 
     var inputNumber = numberList(parseInt($("#number").val()));
-    
+
     var numbersList = numbersArray.map(function(number) {
       $("ul").append("<li>" + number + "</li>");
     });
@@ -31,8 +31,10 @@ $(function() {
 
     $("button#play-again").click(function() {
       numbersArray.length=0;
+      $("form")[0].reset();
       $(".output").children().remove();
       $("button#play").show();
       $("button#play-again").hide();
+      inputNumber.val=" ";
   });
 });
