@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link  rel='stylesheet' href="/css/styles.css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
         <title>Ping Pong</title>
       </head>
       <body>
-        <form id="ping-pong-form">
-          <label for="goal">Enter a number:</label>
-          <input id="goal" type="number">
-          <button type="submit">Submit</button>
-        </form>
-        <form id="signup">
-          <label for="email">Enter your email:</label>
-          <input id="email" type="text">
-          <button type="submit">Submit</button>
-        </form>
-        <ul id="solution"></ul>
+        <div class="container">
+          <h2>Ping pong</h2>
+          <form id="ping-pong-form">
+            <label for="goal">Enter a number:</label>
+            <input id="goal" type="number">
+            <button type="submit">Submit</button>
+          </form>
+          <h2>Email Signup</h2>
+          <form id="signup">
+            <label for="email">Enter your email:</label>
+            <input id="email" type="text">
+            <button type="submit">Submit</button>
+          </form>
+          <ul id="solution"></ul>
+          <h2>Basic Calculator</h2>
+          <form id="basic-calcualtor">
+            <input id="first-number" type="number">
+            <select id="operators">
+              <option id="add">+</option>
+              <option id="subtranct">-</option>
+              <option id="multiply">x</option>
+              <option id="divide">/</option>
+            </select>
+            <input id="second-number" type="number">
+            <button type="submit">Calculate</button>
+          </form>
+        </div>
       </body>
     </html>
